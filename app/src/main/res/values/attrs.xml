@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PetListLayout">
+        <attr name="petid" format="reference|string" />
+        <attr name="petimage" format="reference|string" />
+        <attr name="petname" format="reference|string" />
+        <attr name="petage" format="reference|integer" />
+        <attr name="petspecies" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="ProfileLayout">
+        <attr name="profileimage" format="reference|string" />
+        <attr name="profilename" format="reference|string" />
+        <attr name="profileage" format="reference|integer" />
+        <attr name="profilespecies" format="reference|string" />
+        <attr name="profileillness" format="reference|string" />
+        <attr name="profilesurgery" format="reference|string" />
+        <attr name="profileetc" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="EditPetLayout">
+        <attr name="editpetid" format="reference|string" />
+        <attr name="editpetimage" format="reference|string" />
+        <attr name="editpetname" format="reference|string" />
+        <attr name="editpetage" format="reference|integer" />
+        <attr name="editpetspecies" format="reference|string" />
+        <attr name="editpetillness" format="reference|string" />
+        <attr name="editpetsurgery" format="reference|string" />
+        <attr name="editpetetc" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="DiaryListLayout">
+        <attr name="diarytitle" format="reference|string" />
+        <attr name="diarydate" format="reference|string" />
+    </declare-styleable>
+    <!--
+    <declare-styleable name="SubManageLayout">
+        <attr name="editimage" format="reference|string" />
+        <attr name="editname" format="reference|string" />
+        <attr name="editinfo" format="reference|string" />
+        <attr name="editprice" format="reference|integer" />
+    </declare-styleable>
+    -->
+</resources>

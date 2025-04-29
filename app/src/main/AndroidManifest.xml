@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.petmanager">
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name ="com.example.petmanager.ProfileActivity" android:label ="프로필 액티비티"/>
+        <activity android:name ="com.example.petmanager.EditDiaryActivity" android:label ="일기 편집 액티비티"/>
+        <activity android:name ="com.example.petmanager.EditPetActivity" android:label ="편집 액티비티"/>
+        <activity android:name ="com.example.petmanager.DiaryPageActivity" android:label ="일기 세부 액티비티"/>
+        <activity android:name ="com.example.petmanager.DiaryActivity" android:label ="일기 액티비티"/>
+        <activity android:name=".walkdialog"> </activity>
+        <activity android:name=".Walkpet"></activity>
+        <activity android:name=".maptest"></activity>
+        <activity android:name=".Alaramsevice"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJdNexdHk6eTTvdOm4HcwfGyZbv9ezfCU" />
+
+        <receiver
+            android:name=".AlarmRecevier"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
